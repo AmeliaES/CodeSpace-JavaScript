@@ -46,5 +46,5 @@ let secondNum = Number(window.prompt("Input the second number:"))
 alert('The division of the first number and the second number is: ' + ( firstNum / secondNum) )
 
 // Return the number to display on html page:
-document.getElementById("activity2").innerHTML = 'The division of the first number and the second number is: ' + ( firstNum / secondNum) 
+document.getElementById("basics_activity2").innerHTML = 'The division of the first number and the second number is: ' + ( firstNum / secondNum) 
 
