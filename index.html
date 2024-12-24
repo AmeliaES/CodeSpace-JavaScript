@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<!-- <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +10,74 @@
     <p id="controlStatements_activity2"></p>
     <p id="loops_activity1"></p>
     <p id="loops_activity2"></p>
-    <p id="arrays_activity1"></p>
+    <p id="arrays_activity1"></p> -->
     <!-- Ensure all js scripts are below html code, else "getElementById" does not work -->
     <!-- <script src="JS_Basics.js"></script>   -->
     <!-- <script src="JS_Control_Statements.js"></script>  -->
     <!-- <script src="JS_Loops.js"></script> -->
     <!-- <script src="JS_Arrays.js"></script> -->
-    <script src="JS_Functions.js"></script>
+    <!-- <script src="JS_Functions.js"></script>
 </body>
+</html> -->
+
+<!-- Activity 1 - Vanilla JS DOM
+Here is a sample html file with a submit button. Now modify the style of the paragraph text through JavaScript code.
+
+Sample HTML file : -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 1 - Vanilla JS DOM</title>
+    </head> 
+    <body>
+        <p id ='text'>Vanilla JS DOM</p> 
+        <div>
+        <button id="jsstyle"
+        onclick="js_style()">Style</button>
+        </div>
+
+        <script>
+            function js_style() {
+                document.getElementById("text").style.color = "green"; // text changes to green after clicking the button
+            }
+
+        </script>
+    </body>
+</html> -->
+
+<!-- Activity 2 - Vanilla JS DOM
+Write a JavaScript program to calculate the volume of a sphere. -->
+
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 2 - Vanilla JS DOM</title>
+    </head> 
+    <body>
+        <p>Input radius value and get volume of a sphere:</p> 
+        <label for="radius">Radius:</label>
+        <br>
+        <input type="number" id="radius" name="radius">
+        <br><br>
+        <label for="volume">Volume:</label>
+        <br>
+        <input type="number" id="volume" readonly>
+        <br><br>
+        <div>
+            <button id="calc_radius"
+            onclick="calc_radius()">Calculate</button>
+        </div>
+
+
+        <script>
+            function calc_radius() {
+                let radius = document.getElementById("radius").value
+                document.getElementById("volume").value = Math.round( 4/3 * Math.PI * Math.pow(radius, 3) )
+            }
+
+        </script>
+    </body>
 </html>
